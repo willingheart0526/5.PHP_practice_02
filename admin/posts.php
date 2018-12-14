@@ -48,7 +48,7 @@ switch($source)
     break;
 
     default:
-
+    
     include "includes/view_all_posts.php";
 
     break;
