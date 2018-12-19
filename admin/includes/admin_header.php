@@ -2,6 +2,22 @@
 <?php include "functions.php"; ?>
 
 <?php ob_start(); ?>
+<?php session_start(); ?>
+
+
+
+<?php  //用以確保只有"admin"的使用者可以進入後台管理
+
+if(!isset($_SESSION['user_role']))
+{
+        header("Location:../index.php");
+}
+
+
+?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
